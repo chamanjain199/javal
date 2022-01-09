@@ -7,7 +7,7 @@ public class StringTricks {
 		
 		System.out.println(greeting.substring(0, 3));  //Hel
 		System.out.println(greeting.substring(0, 3) == "Hel");// false  // return heap address
-		System.out.println(greeting.substring(0, 3).intern() == "Hel");// false
+		System.out.println(greeting.substring(0, 3).intern() == "Hel");// true
 		System.out.println(greeting.substring(0, 3).equals("Hel"));// true
 
 	}
