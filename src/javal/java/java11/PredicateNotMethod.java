@@ -10,15 +10,17 @@ public class PredicateNotMethod {
 
 	public static void main(String[] args) {
 
-		try (var lines = Files.lines(Path.of("text.txt"))) {
-			
-		var string=	lines.filter(Predicate.not(String::isBlank)).collect(Collectors.toList());
+		try(var lines=Files.lines(Path.of("text.txt"))){
+
+		var string=lines.filter(Predicate.not(String::isBlank)).collect(Collectors.toList());
+
+		var string2=lines.filter(Predicate.not(x->x.isBlank())).collect(Collectors.toList());
+
 		System.out.println(string);
 
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		}catch(IOException e){
+		// TODO Auto-generated catch block
+		e.printStackTrace();}
 
 	}
 }

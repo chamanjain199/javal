@@ -3,16 +3,6 @@ package javal.java8;
 import java.util.List;
 import java.util.Optional;
 
-class Book {
-	String name;
-	int price;
-
-	public Book(String name, int price) {
-		super();
-		this.name = name;
-		this.price = price;
-	}
-}
 
 public class OptionalClass {
 
