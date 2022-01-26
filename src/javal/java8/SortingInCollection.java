@@ -77,7 +77,7 @@ public class SortingInCollection {
 				.collect(Collectors.toList());
 		System.out.println(emp4);
 		
-		Objects.nonNull(emp4)
+		Objects.nonNull(emp4);
 
 	}
 

@@ -39,13 +39,7 @@ class Employee {
 	public String toString() {
 		return "Employee [name=" + name + ", salary=" + salary + "]";
 	}
-
-}
-
-public class ComparingMethodInStream {
-
-	public static void main(String[] args) {
-
+	public static List<Employee> getEmployee(){
 		var employess = new ArrayList<Employee>();
 		employess.add(new Employee("A", 100));
 		employess.add(new Employee("B", 200));
@@ -54,6 +48,17 @@ public class ComparingMethodInStream {
 		employess.add(new Employee("A", 600));
 		employess.add(new Employee("R", 100));
 		employess.add(new Employee("B", 330));
+		return employess;
+	}
+
+}
+
+public class ComparingMethodInStream {
+
+	public static void main(String[] args) {
+
+		var employess = Employee.getEmployee();
+		
 
 		// keyExtractor : Field that is used to sort object
 		// comparing : pass me the field that i can used to compare object
