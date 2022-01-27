@@ -35,9 +35,13 @@ public class Employee {
 		employess.add(new Employee("aman", 10000));
 		employess.add(new Employee("harshit", 12000));
 		employess.add(new Employee("mohit", 1300));
+		employess.add(new Employee("mohit", 1400));
+
 		employess.add(new Employee("kamal", 14000));
 		employess.add(new Employee("azad", 1000));
 		employess.add(new Employee("arvind", 14200));
+		employess.add(new Employee("aman", 12000));
+
 		return employess;
 	}
 
