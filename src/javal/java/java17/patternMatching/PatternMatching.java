@@ -1,10 +1,11 @@
+/*
 package javal.java.java17.patternMatching;
 
 interface Shape {
 
 	public static double getParimeterError(Shape shape) {
 		if (!(shape instanceof Circle cr))
-			return cr.radios() * 2 * Math.PI; // Can not use cr here because the predicate cr Circle Rectangle is false.
+			//return cr.radios() * 2 * Math.PI; // Can not use cr here because the predicate cr Circle Rectangle is false.
 
 		if (shape instanceof Rectangle r && r.length() > 5) {
 			// Because the conditional-AND operator (&&) is short-circuiting, the program
@@ -12,11 +13,12 @@ interface Shape {
 			// true.
 			System.out.println(r);
 		}
-		if (shape instanceof Rectangle r || r.length() > 5) {
-			System.out.println(r);// The program can reach the r.length() || 5 if the instanceof is false; thus,
-									// you cannot use the pattern variable r here.
+//		if (shape instanceof Rectangle r || r.length() > 5) {
+//			System.out.println(r);// The program can reach the r.length() || 5 if the instanceof is false; thus,
+//									// you cannot use the pattern variable r here.
+//
+//		}
 
-		}
 
 	}
 
@@ -30,21 +32,23 @@ interface Shape {
 		}
 	}
 
-	public static double getPerimeter2(Shape shape) throws IllegalArgumentException {
-		return switch (shape) {
-		case Rectangle r -> 2 * r.length() + 2 * r.width();
-		case Circle c -> 2 * c.radius() * Math.PI;
-		default -> throw new IllegalArgumentException("Unrecognized shape");
-		};
-	}
+//	public static double getPerimeter2(Shape shape) throws IllegalArgumentException {
+//		return switch (shape) {
+//		case Rectangle r -> 2 * r.length() + 2 * r.width();
+//		case Circle c -> 2 * c.radius() * Math.PI;
+//		default -> throw new IllegalArgumentException("Unrecognized shape");
+//		};
+//	}
 
-	public static double getPerimeter1(Shape shape) throws IllegalArgumentException {
+	*/
+/*public static double getPerimeter1(Shape shape) throws IllegalArgumentException {
 		return switch (shape) {
 		case Rectangle r -> 2 * r.length() + 2 * r.width();
 		case Circle c -> 2 * c.radius() * Math.PI;
 		default -> throw new IllegalArgumentException("Unrecognized shape");
 		};
-	}
+	}*//*
+
 
 }
 
@@ -68,3 +72,4 @@ public class PatternMatching {
 	}
 
 }
+*/

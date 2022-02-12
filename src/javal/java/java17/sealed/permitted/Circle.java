@@ -1,8 +1,8 @@
 package javal.java.java17.sealed.permitted;
 
-public sealed class Circle1 {// need to extends a sealed class
-
-}
+//public sealed class Circle1 {// need to extends a sealed class
+//
+//}
 
 class NonSealed {
 
